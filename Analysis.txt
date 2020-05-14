@@ -1,0 +1,27 @@
+Task0 - The worst case runtime of the program is O(1). This is because this
+ 	program contains 2 print statements. Each print statement runs at constant
+	time, so the combined runtime of both print statements is still constant.
+
+Task1 - The worst case runtime of the program is O(n). This is because there are
+	two for loops in the program, each of which will execute for the length of
+	of the 'texts' and 'calls' lists. The print statement requires constant time
+	(O(1) time) for execution. Thus, the runtime of the whole program is O(n + 1) = O(n). 
+
+Task2 - The worst case runtime of the program is O(n). This is because the first for
+	loop will execute for the length of the 'calls' list. The inner for loop inside
+	the first one will execute all the statements inside it twice, and thus, the run 
+	time of this inner for loop is O(1). Outside the two for loops, both the 
+	statements have an O(1) run time. Thus, the runtime of the entire program is
+	O(n*1 + 1 + 1) = O(n). 
+
+Task3 - The worst case runtime of the program is O(n log n). This is because the first for loop
+	has an O(n) run time. The print statements on lines 66 and 71 have an O(1) run time, while 
+	the second for loop has an O(n) runtime. The time complexity of the sorted() 
+  	function is O(n log n) as stated in the project description, so the code on line 67 has an O(n log n) time.	 
+	Therefore, the combined run time of the whole program is O(n + 1 + n log n + n + 1) = O(n log n)
+
+Task4 - The worst case runtime of the program is O(n log n). This is because each of the for loops on lines 31,
+	36 and 42 have an O(n) runtime. The print statement on line 48 has an O(1) runtime, while the second for 
+	loop has an O(n) run time. The time complexity of the sorted() function is O(n log n) as stated in the 
+	project description, so the code online 47 has an O(n log n) time. Therefore, the combined run time of 
+	the whole program is O(n + n + n + n log n + 1 + n) = O(n log n) 
